@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import HomePage from './pages/HomePage';
 import RegisterPage from './pages/RegisterPage';
 import LogInPage from './pages/LogInPage';
+import RoomPage from './pages/RoomPage';
 
 import Navbar from './components/Navbar';
 import AuthenticationContext from './context/authentication';
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/log-in" element={<LogInPage />} />
+          <Route path="/room/:id" element={<RoomPage />} />
         </Routes>
       </BrowserRouter>
     </AuthenticationContext.Provider>

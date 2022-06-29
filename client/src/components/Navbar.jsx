@@ -20,6 +20,7 @@ const Navbar = () => {
         <>
           <span>Welcome {user.name}</span>
           <button onClick={handleSignOut}>Sign Out</button>
+          <Link to="/room/abc">Room ABC</Link>
         </>
       )) || (
         <>
